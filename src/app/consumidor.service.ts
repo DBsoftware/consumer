@@ -9,7 +9,7 @@ import { map, filter, catchError, mergeMap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ConsumidorService {
-  apiUrl = `https://servicio-encuesta.herokuapp.com/encuesta`;
+  apiUrl = `https://servicio-encuesta.herokuapp.com/encuesta/`;
   constructor(private http: HttpClient) { }
 
   getVal(aux: string = '12345'): Observable<any> {
